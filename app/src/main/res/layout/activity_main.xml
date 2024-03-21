@@ -8,6 +8,13 @@
     tools:context=".MainActivity"
     android:orientation="horizontal">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp" />
+
+
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/side"
         android:layout_width="match_parent"
@@ -23,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/cardview_light_background"
+            android:backgroundTint="@android:color/background_light"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text="笔记"

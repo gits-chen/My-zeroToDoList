@@ -27,19 +27,6 @@ class MainActivity : AppCompatActivity() {
         val contentView = binding.root
         setContentView(contentView)
 
-        binding.notebook.setOnClickListener {
-            Toast.makeText(this,"你点了笔记",Toast.LENGTH_SHORT).show()
-        }
-        binding.list.setOnClickListener {
-            Toast.makeText(this,"你点了待办",Toast.LENGTH_SHORT).show()
-        }
-        binding.mine.setOnClickListener {
-            val uri = Uri.parse("https://ys.mihoyo.com/")
-            val intent = Intent()
 
-            intent.data = uri
-
-            startActivity(intent)
-        }
     }
 }
