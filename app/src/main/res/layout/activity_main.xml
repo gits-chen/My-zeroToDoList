@@ -9,16 +9,69 @@
     android:orientation="horizontal">
 
     <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/side"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:singleSelection="true"
+        app:checkedButton="@id/notebook"
+        >
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/notebook"
+            android:padding="15sp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#00ff00"
+            android:backgroundTint="@color/cardview_light_background"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
             android:text="笔记"
             android:textColor="@color/cardview_dark_background"
-            android:textSize="10sp"
+            android:textSize="12sp"
+            app:cornerRadius="0sp"
+            app:icon="@drawable/book"
+            app:iconGravity="textTop"
+            app:iconPadding="5sp"
+            app:iconSize="20sp"
+            app:iconTint="@color/cardview_dark_background" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_light_background"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="15sp"
+            android:text="待办"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            app:cornerRadius="0sp"
+            app:icon="@drawable/list"
+            app:iconGravity="textTop"
+            app:iconPadding="5sp"
+            app:iconSize="20sp"
+            app:iconTint="@color/cardview_dark_background" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardview_light_background"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="15sp"
+            android:text="我的"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            app:cornerRadius="0sp"
+            app:icon="@drawable/cat"
+            app:iconGravity="textTop"
+            app:iconPadding="2sp"
+            app:iconSize="23sp"
+            app:iconTint="@color/cardview_dark_background" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
 </LinearLayout>
